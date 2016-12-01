@@ -1,0 +1,78 @@
+<?php
+if(isset($_POST["country"])){
+    // Capture selected country
+    $country = $_POST["country"];
+     
+    // Define country and city array
+    $countryArr = array(
+                    "AN" => array("Nicobar","North and Middle Andaman","South Andaman"),
+                    "AP" => array("Anantapur","Chittoor""East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Sri Potti Sriramulu Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"),
+                    "AR" => array("Changlang", "Dibang Valley", "East Kameng","Anjaw","East Siang",					"Kra Daadi","Kurung Kumey","Lohit","Longding","Lower Dibang Valley","Lower Subansiri","Namsai","Papum Pare","Siang","Tawang","Tirap","Upper Siang","Upper Subansiri","West Kameng","West Siang"),
+					
+					"AS" =>array("Baksa","Barpeta","Bongaigaon","Cachar","Chirang","Darrang","Dhemaji","Dhubri","Dibrugarh","Dima Hasao","Goalpara","Golaghat","Hailakandi","Jorhat","Kamrup","Kamrup Metropolitan","Karbi Anglong","Karimganj","Kokrajhar","Lakhimpur","Morigaon","Nagaon","Nalbari","Sivasagar","Sonitpur","Tinsukia","Udalguri"),
+					
+					"BR" =>array("Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur","Buxar","Darbhanga","East Champaran","Gaya","Gopalganj","Jamui","Jehanabad","Kaimur","Katihar","Khagaria","Kishanganj","Lakhisarai","Madhepura","Madhubani","Munger","Muzaffarpur","Nalanda","Nawada","Patna","Purnia","Rohtas","Saharsa","Samastipur","Saran","Sheikhpura","Sheohar","Sitamarhi","Siwan","Supaul","Vaishali","West Champaran"),
+					
+					
+					"CH" =>array("Chandigarh"),
+					
+					"CG" =>array("Balod","Baloda Bazar","Balrampur","Bastar","Bemetara","Bijapur","Bilaspur","Dantewada","Dhamtari","Durg","Gariaband","Janjgir-Champa","Jashpur","Kabirdham (formerly Kawardha)","Kanker","Kondagaon","Korba","Koriya","Mahasamund","Mungeli","Narayanpur","Raigarh","Raipur","Rajnandgaon","Sukma","Surajpur","Surguja"),
+					
+					
+					"DN" =>array("Dadra and Nagar Haveli"),
+					
+					"DD" =>array("Daman","Diu"),
+					
+					"DL" =>array("Central Delhi","East Delhi","New Delhi","North Delhi","North East","Delhi","North West Delhi","Shahdara","South Delhi","South East Delhi","South West Delhi","West Delhi"),
+					
+					"GA" =>array("North Goa", "South Goa"),
+					
+					"GJ" =>array("Ahmedabad","Amreli","Anand","Aravalli","Banaskantha","Bharuch","Bhavnagar","Botad","Chhota Udaipur","Dahod","Dang","Devbhoomi Dwarka","Gandhinagar","Gir Somnath","Jamnagar","Junagadh","Kheda","Kutch","Mahisagar","Mehsana","Morbi","Narmada","Navsari","Panchmahal","Patan","Porbandar","Rajkot","Sabarkantha","Surat","Surendranagar","Tapi","Vadodara","Valsad"),
+					
+					
+					"HR" =>array("Ambala","Bhiwani","Charkhi Dadri","Faridabad","Fatehabad","Gurgaon","Hissar","Jhajjar","Jind","Kaithal","Karnal","Kurukshetra","Mahendragarh","Mewat","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Yamuna Nagar"),
+					
+					
+					"HP" =>array("Bilaspur","Chamba","Hamirpur","Kangra","Kinnaur","Kullu","Lahauland Spiti","Mandi","Shimla","Sirmaur","Solan","Una"),
+					
+					
+					"JK" =>array("Anantnag","Bandipora","Baramulla","Badgam","Doda","Ganderbal","Jammu","Kargil","Kathua","Kishtwar","Kulgam","Kupwara","Leh","Poonch","Pulwama","Rajouri","Ramban","Reasi","Samba","Shopian","Srinagar","Udhampur"),
+					
+					"JH" =>array("Bokaro","Chatra","Deoghar","Dhanbad","Dumka","East Singhbhum","Garhwa","Giridih","Godda","Gumla","Hazaribag","Jamtara","Khunti","Koderma","Latehar","Lohardaga","Pakur","Palamu","Ramgarh","Ranchi","Sahibganj","Seraikela Kharsawan","Simdega","West Singhbhum"),
+					
+					"KA" =>array("Bagalkot","Bellary","Belgaum","Bangalore Rural","Bangalore Urban","Bidar","Chamarajnagar","Chikkaballapur","Chikkamagaluru","Chitradurga","Dakshina Kannada","Davanagere","Dharwad","Gadag","Hassan","Haveri","Gulbarga","Kodagu","Kolar","Koppal","Mandya","Mysore","Raichur","Ramanagara","Shimoga","Tumkur","Udupi","Uttara Kannada","Vijayapura","Yadgir"),
+					
+                );
+     
+    // Display city dropdown based on country name
+    if($country !== 'Select'){
+       
+        echo "<select  name='martyrdistrict'  class='form-control'>";
+        foreach($countryArr[$country] as $value){
+            echo "<option>". $value . "</option>";
+        }
+        echo "</select>";
+    } 
+}
+?>
+
+
+Thanks & Regards,
+Manish Kumar
+Associate Executive Web Developer
+ 	 
+O:  91-11-46667666, 
+ F:  91-11-46667603
+M: +91 7530959768	
+Perfect Relations Pvt. Ltd  
+S 27, Second Floor, Star City,
+Mahatta Towers, District Centre,
+Mayur Vihar Phase I, Delhi - 110091
+Follow us: Twitter | Connect: Facebook  
+
+ 		
+India Consultancy of the Year 2013 – The Holmes Report
+ 	 
+				
+
+

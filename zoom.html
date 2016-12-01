@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style>
+.imagezoominout
+{
+	height:250px ;
+	width:380px;
+	border:1px solid red;
+	overflow:hidden;
+}
+#zoom
+{
+	height:250px;
+	-webkit-transition:all 5s ease-in-out;
+	-moz-transition:all 5s ease-in-out;
+	-ms-transition:all 5s ease-in-out;
+	-o-transition:all 5s ease-in-out;
+	transition:all 5s ease-in-out;
+}
+#zoom:before
+{
+	-webkit-transform:scale(3,3);
+	-moz-transform:scale(3,3);
+	-ms-transform:scale(3,3);
+	-o-transform:scale(3,3);
+	transform:(3,3);
+}
+#zoom:hover
+{
+	-webkit-transform:scale(3,3);
+	-moz-transform:scale(3,3);
+	-ms-transform:scale(3,3);
+	-o-transform:scale(3,3);
+	transform:scale(3,3);
+}
+</style>
+<body>
+<div class="imagezoominout">
+	<img src="images/img.png" id="zoom" />
+</div>
+</body>
+</html>
